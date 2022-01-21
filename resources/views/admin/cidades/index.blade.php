@@ -3,18 +3,18 @@
 @section('conteudo-principal')
 
     <section>
-        <table>
+        <table class="highlight">
             <thead>
                 <tr>
                     <th>Cidade</th>
-                    <th>Opções</th>
+                    <th class="right-align">Opções</th>
                 </tr>
             </thead>
             <tbody>
               @forelse ($cidades as $cidade)
                   <tr>
                       <td>{{$cidade}}</td>
-                      <td>Excluir - remover</td>
+                      <td class="right-align">Excluir - remover</td>
                   </tr>
               @empty
                   <tr>
